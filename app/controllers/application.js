@@ -1,1 +1,1 @@
-export { default } from 'ember-swiper5/controllers/application';
+export { default } from 'ember-swiper6/controllers/application';

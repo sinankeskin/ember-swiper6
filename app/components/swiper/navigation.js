@@ -1,1 +1,1 @@
-export { default } from 'ember-swiper5/components/swiper/navigation';
+export { default } from 'ember-swiper6/components/swiper/navigation';

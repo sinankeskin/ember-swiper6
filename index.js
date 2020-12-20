@@ -5,7 +5,7 @@ module.exports = {
   options: {
     autoImport: {
       alias: {
-        swiper: 'swiper/js/swiper.esm',
+        swiper: 'swiper/swiper.esm',
       },
     },
     babel: {
@@ -20,7 +20,7 @@ module.exports = {
     let hasLess = !!app.registry.availablePlugins['ember-cli-less'];
 
     if (!hasSass && !hasLess) {
-      app.import('node_modules/swiper/css/swiper.css');
+      app.import('node_modules/swiper/swiper.min.css');
     }
   },
 };

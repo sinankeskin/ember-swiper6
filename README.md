@@ -1,6 +1,6 @@
-# ember-swiper5
+# ember-swiper6
 
-Ember addon for [Swiper](https://swiperjs.com/) slider library.
+Ember addon for [Swiper](https://swiperjs.com/) slider v6 library.
 
 ## Compatibility
 
@@ -9,7 +9,7 @@ Ember addon for [Swiper](https://swiperjs.com/) slider library.
 - Node.js v10 or above
 
 ```
-ember install ember-swiper5
+ember install ember-swiper6
 ```
 
 ## Usage
@@ -19,13 +19,11 @@ You can change all global configuration settings via `config/environment.js` fil
 Please check [Swiper](https://swiperjs.com/api/) site for more configuration details.
 
 ```javascript
-ENV['ember-swiper5'] = {
+ENV['ember-swiper6'] = {
   speed: 450,
   loop: true, // etc
 };
 ```
-
-#### As of >= v1.2.0 dynamic imports added to addon.
 
 You can import only modules you want.
 
@@ -52,13 +50,13 @@ Avaiable module names:
 - zoom
 
 ```javascript
-ENV['ember-swiper5'] = {
+ENV['ember-swiper6'] = {
   imports: '*', // or ["*"] for every modules
 };
 ```
 
 ```javascript
-ENV['ember-swiper5'] = {
+ENV['ember-swiper6'] = {
   imports: ['a11y', 'pagination', 'navigation'], // only these modules
 };
 ```
@@ -129,9 +127,9 @@ Full configuration
 
 All slideXXX events returns swiper instance. That way you can reach all properties like realIndex etc...
 
-> Note: If you use sass or less; ember-swiper5 will be imported automatically.
+> Note: If you use sass or less; ember-swiper6 will be imported automatically.
 
-> In ember-swiper5 file; after the //IMPORT_COMPONENTS line you should import the component(s) you need.
+> In ember-swiper6 file; after the //IMPORT_COMPONENTS line you should import the component(s) you need.
 
 > Ex: For scrollbar: @import './components/scrollbar/scrollbar'; etc...
 

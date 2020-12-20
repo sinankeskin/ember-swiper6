@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = {
-  description: 'Adds style imports for the ember-swiper5 addon.',
+  description: 'Adds style imports for the ember-swiper6 addon.',
 
   normalizeEntityName() {},
 
@@ -50,16 +50,13 @@ module.exports = {
     const files = [
       {
         src: `swiper.${extension}`,
-        dst: `ember-swiper5.${extension}`,
+        dst: `ember-swiper6.${extension}`,
+      },
+      {
+        src: `swiper-vars.${extension}`,
+        dst: `swiper-vars.${extension}`,
       },
     ];
-
-    if (extension === 'less') {
-      files.push({
-        src: 'src/less/plugin.js',
-        dst: 'less/plugin.js',
-      });
-    }
 
     files.forEach(({ src, dst }) => {
       fs.copyFileSync(path.join(inputDir, src), path.join(outputDir, dst));
@@ -83,7 +80,7 @@ module.exports = {
   },
 
   writeImport(extension) {
-    const importStatement = '\n@import "ember-swiper5";\n';
+    const importStatement = '\n@import "ember-swiper6";\n';
 
     const stylePath = path.join('app', 'styles');
 
