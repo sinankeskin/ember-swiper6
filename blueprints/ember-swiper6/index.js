@@ -41,7 +41,7 @@ module.exports = {
       fs.mkdirSync(outputDir);
     }
 
-    const folders = ['components', `${extension}`];
+    const folders = ['components'];
 
     folders.forEach((folder) => {
       this.copyFolderSync(path.join(inputDir, folder), path.join(outputDir, folder), extension);
