@@ -44,7 +44,11 @@ module.exports = {
     const folders = ['components'];
 
     folders.forEach((folder) => {
-      this.copyFolderSync(path.join(inputDir, folder), path.join(outputDir, folder), extension);
+      this.copyFolderSync(
+        path.join(inputDir, folder),
+        path.join(outputDir, folder),
+        extension
+      );
     });
 
     const files = [
@@ -74,7 +78,11 @@ module.exports = {
           fs.copyFileSync(path.join(from, element), path.join(to, element));
         }
       } else {
-        this.copyFolderSync(path.join(from, element), path.join(to, element), extension);
+        this.copyFolderSync(
+          path.join(from, element),
+          path.join(to, element),
+          extension
+        );
       }
     });
   },
