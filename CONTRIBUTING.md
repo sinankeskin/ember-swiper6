@@ -8,9 +8,14 @@
 
 ## Linting
 
+<<<<<<< HEAD
 - `npm run lint:hbs`
 - `npm run lint:js`
 - `npm run lint:js -- --fix`
+=======
+* `npm run lint`
+* `npm run lint:fix`
+>>>>>>> 2bdb600 (v3.25.3...v3.26.0)
 
 ## Running tests
 
